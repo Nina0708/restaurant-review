@@ -41,7 +41,11 @@
             'reviews'
             'footer';
     }
-
+    .filter-options {
+        grid-template-columns: repeat(1, auto);
+        grid-row-gap: 20px;
+        justify-content: stretch;
+    }
 }
 
 @media screen and (min-width: 721px) and (max-width: 1280px) {
@@ -55,6 +59,11 @@
             'restaurant'
             'reviews'
             'footer';
+    }
+    .filter-options {
+        grid-template-columns: repeat(3, auto);
+        grid-column-gap: 20px;
+        justify-content: center;
     }
 }
 
@@ -70,6 +79,11 @@
             'reviews map'
             'footer footer';
     }
+    .filter-options {
+        grid-template-columns: repeat(3, auto);
+        grid-column-gap: 20px;
+        justify-content: center;
+    }
 }
 
 
@@ -84,5 +98,10 @@
         'restaurant map'
         'reviews map'
         'footer footer';
+    }
+    .filter-options {
+        grid-template-columns: repeat(3, auto);
+        grid-column-gap: 20px;
+        justify-content: center;
     }
 }
